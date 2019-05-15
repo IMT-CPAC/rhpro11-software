@@ -1,0 +1,25 @@
+StartChar: o
+Encoding: 111 111 6
+GlifName: o
+Width: 578
+Flags: HMW
+AnchorPoint: "horn" 438 440 basechar 0
+AnchorPoint: "below" 288 0 basechar 0
+AnchorPoint: "above" 282 482 basechar 0
+AnchorPoint: "cedilla" 288 -1 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+288 -10 m 259
+ 136 -10 38 91 38 241 c 3
+ 38 394 136 492 290 492 c 259
+ 442 492 540 393 540 243 c 3
+ 540 92 440 -10 288 -10 c 259
+288 397 m 3
+ 206 397 161 325 161 241 c 3
+ 161 156 206 86 288 86 c 3
+ 374 86 417 153 417 241 c 3
+ 417 328 371 397 288 397 c 3
+EndSplineSet
+Validated: 1
+EndChar

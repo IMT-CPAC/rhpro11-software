@@ -1,0 +1,17 @@
+files
+libncurses5-dev.links
+libncurses5.install
+libncursesw5.install
+libncurses5-dev.install
+libncursesw5-dev.install
+libtinfo-dev.install
+libtinfo-dev.links
+libtinfo5.install
+libtermcap.so
+*.substvars
+*.debhelper
+*.debhelper.log
+lib*ncurses*/
+lib*tinfo*/
+ncurses-*/
+tmp/

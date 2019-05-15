@@ -1,0 +1,28 @@
+StartChar: S
+Encoding: 83 83 55
+Width: 581
+VWidth: 1023
+Flags: HMW
+AnchorPoint: "below" 277 0 basechar 0
+AnchorPoint: "above" 277 691 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+300 706 m 259
+ 363 706 433 692 490 658 c 257
+ 458 596 l 257
+ 415 620 356 633 310 633 c 259
+ 212 633 150 594 150 522 c 259
+ 150 450 237 420 300 394 c 256
+ 407 350 529 319 529 188 c 259
+ 529 51 397 -10 261 -10 c 259
+ 173 -10 115 9 50 37 c 257
+ 79 107 l 257
+ 160 75 215 63 263 63 c 259
+ 358 63 446 98 446 183 c 259
+ 446 264 337 291 255 324 c 256
+ 150 366 67 408 67 513 c 259
+ 67 646 171 706 300 706 c 259
+EndSplineSet
+Validated: 1
+EndChar

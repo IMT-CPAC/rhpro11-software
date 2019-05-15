@@ -1,0 +1,233 @@
+.\" Copyright (c) 1997-1999 Michael Meskes (meskes@debian.org)
+.\"
+.\" Permission is granted to make and distribute verbatim copies of this
+.\" manual provided the copyright notice and this permission notice are
+.\" preserved on all copies.
+.\"
+.\" Permission is granted to copy and distribute modified versions of this
+.\" manual under the conditions for verbatim copying, provided that the
+.\" entire resulting derived work is distributed under the terms of a
+.\" permission notice identical to this one
+.TH STAT 1 "28 August 1997" "Linux" 
+.SH NAME
+stat \- display file or filesystem status
+.SH SYNOPSIS
+.B stat 
+[\fI-l\fR] [\fI-f\fR] [\fI-s\fR] [\fI-v\fR] [\fI-t\fR] [\fI-c format\fR]
+file-name [file-name]... 
+.SH DESCRIPTION
+.PP
+This command displays information about the specified file(s).  You do
+not need any access rights to the file to get this information but you
+need search rights to all directories named in the path leading to the
+file.
+.PP
+.B stat
+stats the file pointed to by 
+.I file-name
+
+.B stat
+.I -l
+is identical to
+.BR stat ,
+only that for links information about the files that are obtained by tracing
+the links is displayed.
+
+.B stat
+.I -f 
+does not stat the file itself but instead stats the filesystem where
+.I file-name
+is located.
+
+.B stat
+.I -s
+also shows security context information for SE Linux if available.
+
+.B stat
+.I -v
+prints version information.
+
+.B stat
+.I -t 
+prints the information in terse form, suitable for parsing by other 
+programs
+
+.B stat
+.I -c format
+displays the information in the format specified.
+
+.SH DISPLAY
+.B stat 
+and
+.B stat
+.I -l
+both display the following information:
+.PP
+
+Device number
+
+Inode number
+
+Access rights
+
+Number of hard links
+ 
+User ID (and name if available) of owner
+
+Group ID (and name if available) of owner
+
+Device type (if inode device)
+
+Total size, in bytes
+
+Number of blocks allocated
+
+IO block size
+
+Time of last access
+
+Time of last modification
+
+Time of last change
+
+Security Context for SE Linux if applicable
+
+If
+.I -f
+is specified the following information is displayed:
+.PP
+
+Filesystem type
+
+Block size of the filesystem
+
+Total blocks in the filesystem
+
+Free blocks
+
+Free blocks for non-root user(s)
+
+Total inodes
+
+Free inodes
+
+Maximum length of filenames
+
+If
+.I -c format
+is specified the following interpreted sequences are available for 
+.I format
+:
+.RS 
+%n - File name
+
+%N - Quoted File name with dereference if symbolic link
+
+%d - Device number in decimal
+
+%D - Device number in hex
+
+%i - Inode number
+
+%a - Access rights in octal
+
+%A - Access rights in human readable form
+
+%f - raw mode in hex
+
+%F - File type
+
+%h - Number of hard links
+
+%u - User Id of owner
+
+%U - User name of owner
+
+%g - Group Id of owner
+
+%G - Group name of owner
+
+%t - Major device type in hex
+
+%T - Minor device type in hex
+
+%s - Total size, in bytes
+
+%b - Number of blocks allocated
+
+%o - IO block size
+
+%S - SE Linux SID
+
+%c - SE Linux security context
+
+%x - Time of last access
+
+%X - Time of last access as seconds since Epoch
+
+%y - Time of last modification
+
+%Y - Time of last modification as seconds since Epoch
+
+%z - Time of last change
+
+%Z - Time of last change as seconds since Epoch
+
+.RE
+
+If
+.I -c format
+and
+.I -f
+are specified the following interpreted sequences are available for
+.I format
+:
+
+.RS
+%n - File name
+
+%i - File System id, __val[0] in hex
+
+%I - File System id, __val[1] in hex
+
+%l - Maximum length of filenames
+
+%t - Type in hex
+
+%T - Type in human readable form
+
+%b - Total data blocks in file system
+
+%f - Free blocks in file system
+
+%a - Free blocks available to non-superuser
+
+%s - Optimal transfer block size
+
+%c - Total file nodes in file system
+
+%d - Free file nodes in file system
+
+.RE
+The 
+.BR printf "(3)"
+flag characters '#', '0', '-', ' ', and '+', as well as the field width, 
+and presision options can be used in
+.I format.
+For example, `stat -c "%010b" file' will print the number of blocks allocated 
+zero padded and a minimum of 10 characters wide.
+.PP
+.SH BUGS
+None known so far.
+.LP
+.SH AUTHORS
+Written by Michael Meskes <meskes@debian.org>, 
+.I -f 
+added from 
+.BR statfs 
+by
+Radovan Garabik <garabik@melkor.dnp.fmph.uniba.sk>
+.LP
+.SH "SEE ALSO"
+.BR stat "(2),
+.BR statfs "(2)

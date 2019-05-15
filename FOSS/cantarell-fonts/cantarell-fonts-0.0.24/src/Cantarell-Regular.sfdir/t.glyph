@@ -1,0 +1,51 @@
+StartChar: t
+Encoding: 116 116 19
+Width: 362
+Flags: MW
+AnchorPoint: "aboveright" 299 682 basechar 0
+AnchorPoint: "cedilla" 230 0 basechar 0
+AnchorPoint: "below" 185 0 basechar 0
+AnchorPoint: "above" 145 615 basechar 0
+LayerCount: 2
+Back
+SplineSet
+411 17 m 1
+ 377 4 320 -10 274 -10 c 3
+ 121 -10 100 70 100 155 c 2
+ 100 389 l 1
+ 20 389 l 1
+ 20 481 l 1
+ 100 481 l 1
+ 100 632 l 1
+ 220 632 l 1
+ 220 481 l 1
+ 389 481 l 1
+ 389 389 l 1
+ 220 389 l 1
+ 220 158 l 2
+ 220 121 235 88 301 88 c 3
+ 336 88 374 97 393 102 c 1
+ 411 17 l 1
+EndSplineSet
+Fore
+SplineSet
+236 -10 m 3
+ 136 -10 101 48 101 150 c 2
+ 101 416 l 1
+ 20 416 l 1
+ 20 482 l 1
+ 101 482 l 1
+ 101 615 l 1
+ 184 619 l 1
+ 184 482 l 1
+ 342 482 l 1
+ 342 416 l 1
+ 184 416 l 1
+ 184 156 l 2
+ 184 92 198 59 260 59 c 3
+ 289 59 311 65 325 70 c 1
+ 341 12 l 1
+ 304 -2 270 -10 236 -10 c 3
+EndSplineSet
+Validated: 1
+EndChar

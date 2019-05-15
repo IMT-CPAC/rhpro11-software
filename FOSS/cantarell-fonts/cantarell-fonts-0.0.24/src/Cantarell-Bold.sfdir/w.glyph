@@ -1,0 +1,28 @@
+StartChar: w
+Encoding: 119 119 11
+GlifName: w
+Width: 800
+Flags: HMW
+AnchorPoint: "below" 402 -1 basechar 0
+AnchorPoint: "above" 402 481 basechar 0
+AnchorPoint: "cedilla" 402 -1 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+230 125 m 1
+ 334 481 l 5
+ 468 481 l 5
+ 571 125 l 1
+ 671 481 l 5
+ 800 481 l 5
+ 625 0 l 1
+ 510 0 l 1
+ 402 337 l 1
+ 291 0 l 1
+ 174 0 l 1
+ 0 481 l 5
+ 130 481 l 5
+ 230 125 l 1
+EndSplineSet
+Validated: 1
+EndChar

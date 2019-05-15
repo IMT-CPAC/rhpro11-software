@@ -1,0 +1,16 @@
+Begin3
+Title:          stat
+Version:        3.3
+Entered-date:   22MAR02
+Description:    A wrapper for stat(2) and statfs(2).
+Keywords:       stat file filesystem info
+Author:         meskes@debian.org (Michael Meskes)
+Maintained-by:  
+Primary-site:   metalab.unc.edu /pub/Linux/utils/file
+                16K stat_3.3.tar.gz
+Alternate-site: ftp.debian.org /pub/debian/development/source/utils
+                16K stat_3.3.orig.tar.gz
+Original-site:  
+Platforms:      Linux
+Copying-policy: GPL
+End

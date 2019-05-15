@@ -1,0 +1,33 @@
+StartChar: uni0237
+Encoding: 567 567 323
+Width: 221
+VWidth: 1023
+Flags: MW
+AnchorPoint: "below" 106 -261 basechar 0
+AnchorPoint: "cedilla" 44 -232 basechar 0
+AnchorPoint: "above" 111 482 basechar 0
+LayerCount: 2
+Back
+SplineSet
+95 482 m 1
+ 215 482 l 1
+ 215 -47 l 2
+ 215 -109 210 -210 73 -260 c 1
+ 56 -266 l 1
+ 9 -171 l 1
+ 27 -162 l 2
+ 92 -131 95 -81 95 -55 c 2
+ 95 482 l 1
+EndSplineSet
+Fore
+SplineSet
+68 -78 m 0
+ 68 482 l 1
+ 151 482 l 1
+ 151 -64 l 2
+ 151 -184 108 -233 22 -263 c 1
+ -10 -202 l 1
+ 43 -177 68 -135 68 -78 c 0
+EndSplineSet
+Validated: 1
+EndChar

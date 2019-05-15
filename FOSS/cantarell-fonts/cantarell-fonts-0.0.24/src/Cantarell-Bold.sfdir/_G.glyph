@@ -1,0 +1,29 @@
+StartChar: G
+Encoding: 71 71 28
+GlifName: G_
+Width: 734
+Flags: HMW
+AnchorPoint: "above" 369 692 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+40 350 m 3
+ 40 561 191 706 406 706 c 3
+ 489 706 566 685 638 644 c 2
+ 656 633 l 1
+ 604 538 l 1
+ 586 546 l 1
+ 542 571 476 593 409 593 c 3
+ 268 593 163 497 163 355 c 259
+ 163 204 273 103 426 103 c 3
+ 481 103 508 112 543 132 c 1
+ 543 278 l 1
+ 361 278 l 1
+ 361 391 l 1
+ 666 391 l 1
+ 666 73 l 1
+ 604 20 518 -10 406 -10 c 3
+ 187 -10 40 137 40 350 c 3
+EndSplineSet
+Validated: 1
+EndChar

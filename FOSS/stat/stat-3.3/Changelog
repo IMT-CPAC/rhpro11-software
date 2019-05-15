@@ -1,0 +1,23 @@
+28.08.97: Released version 1.0
+16.09.97: Released version 1.1 (two bugfixes).
+12.09.98: Released version 1.2 (more bugfixes).
+12.11.98: Released version 1.3 (make device output hex).
+28.02.99: Released version 1.4 (doc bugfix).
+30.04.99: Released version 1.5 (sticky bit bugfix).
+07.05.99: Released version 1.6 (another sticky bit bugfix).
+03.09.99: Released version 1.7 (make sure argument '-v' is accepted).
+12.10.99: Released version 2.0 (add statfs functionality).
+27.10.99: Released version 2.1 (add terse option and new manpage).
+22.11.99: Released version 2.2 (better output for devices).
+21.09.00: Released version 2.3 (changed output even more).
+14.02.01: Released version 2.4 (made stat work with large filesystems).
+10.05.01: Released version 2.5 (added io block size).
+10.02.02: Released version 3.0 (more filesystems,
+				fixed output for large files,
+				added format option sent by James Boorn <jboorn@pivotlink.com>,
+				should run on hurd now, patch by nikunj@bindaas.org (Nikunj A. Dadhania)
+				added SELINUX support).
+13.03.02: Released version 3.1 (added SELINUX support for statfs).
+18.03.02: Released version 3.2 (fixed output bugs for SELINUX).
+22.03.02: Released version 3.3 (fixed more bugs with SELINUX).
+
