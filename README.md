@@ -13,6 +13,6 @@ files and directories may exist if required for the particular package.
 Patches are those to be applied by the developer to the upstream version.
 
 These files are posted without git submodules due to requirements of GPL and other licenses that copies of software be made
-available rather than simply pointers to upstream versions. git submodule wouls only pass along a 'git-able' submodule which might
+available rather than simply pointers to upstream versions. git submodule would only pass along a 'git-able' submodule which might
 disappear after being referenced. We do it in this way to ensure the actual source code used in the rhpro11 firmware is made
 available, as the original upstream version, with any local patches identified.
