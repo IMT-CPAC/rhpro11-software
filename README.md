@@ -14,3 +14,5 @@ These files are posted without git submodules due to requirements of GPL and oth
 available rather than simply pointers to upstream versions. git submodule would only pass along a 'git-able' submodule which might
 disappear after being referenced. We do it in this way to ensure the actual source code used in the rhpro11 firmware is made
 available, as the original upstream version, with any local patches identified.
+
+To access the FOSS code from the rhpro sterilizer family, use the "branch" pulldown to select the version number of interest.
