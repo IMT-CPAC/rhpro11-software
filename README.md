@@ -2,8 +2,8 @@ This project contains copies of the FOSS packages used in the rhpro-11 sterilize
 
 The top level of this directory contains:
 
-a README.md file (this file)
-a FOSS directory which contains a directory for each package deployed in an installation.
+  README.md file (this file)
+  FOSS directory which contains a directory for each package deployed in an installation.
 
 Each package directory contains zero or more 'patches' to the project plus a subdirectory containing the source code. Additional
 files and directories may exist if required for the particular package.
