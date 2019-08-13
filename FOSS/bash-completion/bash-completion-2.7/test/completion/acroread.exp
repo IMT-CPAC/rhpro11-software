@@ -1,0 +1,3 @@
+assert_xspec_completion_installed acroread
+
+source "$::srcdir/lib/completions/acroread.exp"

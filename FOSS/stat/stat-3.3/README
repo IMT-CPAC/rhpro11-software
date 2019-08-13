@@ -1,0 +1,24 @@
+A few years ago I found a nifty stat wrapper somewhere on the internet. It
+worked well for me and I used it quite often. But through the years I lost
+the source and could not find it anymore. So I decided to write my own and
+release it to the public. I modelled it closely to the original (as I still
+had a binary).
+
+Hopefully this is of use for you.
+
+Michael Meskes <meskes@debian.org> Wed Aug 27 14:50:08 CEST 1997
+
+A few days ago Radovan Garabik <garabik@fmph.uniba.sk> told me he wrote a 
+command line wrapper for the statfs(2) libc call based on my stat program.
+After I got his sources I added this feature to stat. I only changed the
+output formatting.
+
+If you have a filesystem for which stat reports a type of UNKNOWN, please
+send me the magic number that is listed after UNKNOWN.
+
+Michael Meskes <meskes@debian.org> Mon Oct 11 19:49:01 CEST 1999
+
+I've set up stat for larger filesystems. Depending on your system you might
+have to define _FILE_OFFSET_BITS=64 resp. undefine _LARGEFILE_SOURCE.
+
+Michael Meskes <meskes@debian.org> Wed Feb 14 17:16:15 CET 2001

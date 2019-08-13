@@ -1,0 +1,41 @@
+.\" -*- nroff -*-
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH ISCHROOT 1 "30 May 2011" Debian 
+.SH NOME
+ischroot \- detecta se se está a correr numa chroot
+.SH SINOPSE
+\fBischroot\fP [\-\-default\-false] [\-\-default\-true] [\-\-help] [\-\-version]
+.SH DESCRIÇÃO
+.PP
+\fBischroot\fP detecta se está presentemente a correr numa chroot. O estado ao
+terminar é:
+.TP 
+0
+se estiver a correr presentemente numa chroot
+.TP 
+1
+se não estiver a correr presentemente numa chroot
+.TP 
+2
+se a detecção não for possível (Em GNU/Linux isto acontece se o script não
+for executado como root).
+.SH OPÇÕES
+.TP 
+\fB\-f, \-\-default\-false \fP
+Termina com o estado 1 se a detecção não for possível.
+.TP 
+\fB\-t, \-\-default\-true \fP
+Termina com o estado 0 se a detecção não for possível.
+.TP 
+\fB\-\-help\fP
+Escreve uma mensagem de utilização na saída standard e termina com sucesso.
+.TP 
+\fB\-\-version\fP
+Escreve informação da versão na saída standard e termina com sucesso.
+.SH BUGS
+Em GNU/Linux, a detecção de chroot não é possível quando não se é root. Isto
+funciona bem em GNU/Hurd e GNU/kFreeBSD.

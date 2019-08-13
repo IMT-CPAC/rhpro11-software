@@ -1,0 +1,40 @@
+StartChar: uni04A2
+Encoding: 1186 1186 528
+Width: 721
+VWidth: 1023
+UnlinkRmOvrlpSave: 1
+Flags: HMW
+LayerCount: 2
+Back
+SplineSet
+595 406 m 1
+ 595 692 l 1
+ 730 692 l 1
+ 730 94 l 1
+ 798 94 l 1
+ 798 -164 l 1
+ 690 -164 l 1
+ 690 0 l 1
+ 595 0 l 1
+ 595 291 l 1
+ 218 291 l 1
+ 218 0 l 1
+ 90 0 l 1
+ 90 692 l 1
+ 218 692 l 1
+ 218 406 l 1
+ 595 406 l 1
+EndSplineSet
+Fore
+SplineSet
+623 0 m 1
+ 623 73 l 1
+ 700 73 l 1
+ 700 0 l 1
+ 692 -149 l 1
+ 623 -149 l 1
+ 623 0 l 1
+EndSplineSet
+Refer: 404 1053 N 1 0 0 1 0 0 2
+Validated: 5
+EndChar

@@ -1,0 +1,25 @@
+StartChar: eng
+Encoding: 331 331 322
+Width: 538
+VWidth: 1023
+UnlinkRmOvrlpSave: 1
+Flags: HMW
+AnchorPoint: "above" 262 482 basechar 0
+AnchorPoint: "below" 262 -168 basechar 0
+AnchorPoint: "cedilla" 262 -168 basechar 0
+LayerCount: 2
+Fore
+SplineSet
+476 0 m 1
+ 476 -110 435 -164 338 -164 c 3
+ 316 -164 291 -162 265 -155 c 2
+ 230 -146 l 1
+ 242 -87 l 1
+ 280 -93 l 2
+ 292 -95 304 -97 314 -97 c 3
+ 374 -97 394 -63 394 0 c 1
+ 476 0 l 1
+EndSplineSet
+Refer: 5 110 N 1 0 0 1 0 0 2
+Validated: 5
+EndChar

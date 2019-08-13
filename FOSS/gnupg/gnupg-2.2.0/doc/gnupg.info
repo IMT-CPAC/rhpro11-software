@@ -1,0 +1,224 @@
+This is gnupg.info, produced by makeinfo version 6.3 from gnupg.texi.
+
+This is the 'The GNU Privacy Guard Manual' (version 2.2.0-beta12, August
+2017).
+
+   (C) 2002, 2004, 2005, 2006, 2007, 2010 Free Software Foundation, Inc.
+(C) 2013, 2014, 2015 Werner Koch.
+(C) 2015, 2016, 2017 g10 Code GmbH.
+
+     Permission is granted to copy, distribute and/or modify this
+     document under the terms of the GNU General Public License as
+     published by the Free Software Foundation; either version 3 of the
+     License, or (at your option) any later version.  The text of the
+     license can be found in the section entitled "Copying".
+INFO-DIR-SECTION GNU Utilities
+START-INFO-DIR-ENTRY
+* gpg2: (gnupg).           OpenPGP encryption and signing tool.
+* gpgsm: (gnupg).          S/MIME encryption and signing tool.
+* gpg-agent: (gnupg).      The secret key daemon.
+* dirmngr: (gnupg).        X.509 CRL and OCSP server.
+* dirmngr-client: (gnupg). X.509 CRL and OCSP client.
+END-INFO-DIR-ENTRY
+
+
+Indirect:
+gnupg.info-1: 989
+gnupg.info-2: 304087
+
+Tag Table:
+(Indirect)
+Node: Top989
+Node: Installation2858
+Node: Invoking GPG-AGENT5207
+Node: Agent Commands6973
+Node: Agent Options8777
+Ref: option --options8934
+Ref: option --homedir9203
+Ref: option --log-file14244
+Ref: option --no-allow-mark-trusted14617
+Ref: option --allow-preset-passphrase14821
+Ref: option --no-allow-loopback-pinentry14974
+Ref: option --extra-socket22046
+Ref: option --enable-extended-key-format22723
+Ref: option --enable-ssh-support23211
+Ref: option --ssh-fingerprint-digest25548
+Node: Agent Configuration25896
+Node: Agent Signals31297
+Node: Agent Examples32744
+Node: Agent Protocol33311
+Node: Agent PKDECRYPT35465
+Node: Agent PKSIGN37377
+Node: Agent GENKEY39681
+Node: Agent IMPORT41578
+Node: Agent EXPORT42022
+Node: Agent ISTRUSTED42237
+Node: Agent GET_PASSPHRASE44612
+Node: Agent CLEAR_PASSPHRASE47053
+Node: Agent PRESET_PASSPHRASE47444
+Node: Agent GET_CONFIRMATION48282
+Node: Agent HAVEKEY48954
+Node: Agent LEARN49586
+Node: Agent PASSWD49884
+Node: Agent UPDATESTARTUPTTY50350
+Node: Agent GETEVENTCOUNTER50828
+Node: Agent GETINFO51630
+Node: Agent OPTION52334
+Node: Invoking DIRMNGR54692
+Node: Dirmngr Commands55590
+Node: Dirmngr Options58043
+Ref: Dirmngr Options-Footnote-172136
+Node: Dirmngr Configuration72271
+Node: Dirmngr Signals75401
+Node: Dirmngr Examples76429
+Node: Dirmngr Protocol77111
+Node: Dirmngr LOOKUP77761
+Node: Dirmngr ISVALID79132
+Node: Dirmngr CHECKCRL81705
+Node: Dirmngr CHECKOCSP82762
+Node: Dirmngr CACHECERT84068
+Node: Dirmngr VALIDATE84907
+Node: Invoking GPG85475
+Node: GPG Commands86705
+Node: General GPG Commands87472
+Node: Operational GPG Commands88161
+Ref: option --export-ownertrust103947
+Node: OpenPGP Key Management106060
+Node: GPG Options126109
+Node: GPG Configuration Options127442
+Ref: gpg-option --options140058
+Ref: trust-model-tofu144484
+Node: GPG Key related Options163546
+Node: GPG Input and Output168746
+Node: OpenPGP Options181322
+Node: Compliance Options185778
+Node: GPG Esoteric Options188720
+Ref: GPG Esoteric Options-Footnote-1212818
+Node: Deprecated Options212972
+Node: GPG Configuration214475
+Node: GPG Examples218343
+Node: Unattended Usage of GPG225887
+Node: Programmatic use of GnuPG226518
+Node: Ephemeral home directories227069
+Node: The quick key manipulation interface228376
+Node: Unattended GPG key generation228963
+Node: Invoking GPGSM238006
+Node: GPGSM Commands238875
+Node: General GPGSM Commands239313
+Node: Operational GPGSM Commands240001
+Node: Certificate Management242035
+Node: GPGSM Options247021
+Node: Configuration Options247595
+Ref: gpgsm-option --options247864
+Node: Certificate Options250679
+Ref: gpgsm-option --validation-model253586
+Node: Input and Output254566
+Ref: option --p12-charset255149
+Ref: gpgsm-option --with-key-data256393
+Ref: gpgsm-option --with-validation256667
+Node: CMS Options257545
+Node: Esoteric Options258565
+Node: GPGSM Configuration263588
+Node: GPGSM Examples269256
+Node: Unattended Usage269453
+Node: Automated signature checking270044
+Node: CSR and certificate creation271867
+Node: GPGSM Protocol276813
+Node: GPGSM ENCRYPT278069
+Node: GPGSM DECRYPT280744
+Node: GPGSM SIGN281580
+Node: GPGSM VERIFY283036
+Node: GPGSM GENKEY283552
+Node: GPGSM LISTKEYS284567
+Ref: gpgsm-cmd listkeys284726
+Node: GPGSM EXPORT285479
+Node: GPGSM IMPORT286443
+Node: GPGSM DELETE287184
+Node: GPGSM GETAUDITLOG287691
+Ref: gpgsm-cmd getauditlog287860
+Node: GPGSM GETINFO288204
+Node: GPGSM OPTION289053
+Node: Invoking SCDAEMON292406
+Node: Scdaemon Commands293080
+Node: Scdaemon Options294208
+Node: Card applications304087
+Node: OpenPGP Card304752
+Node: NKS Card305225
+Node: DINSIG Card305551
+Node: PKCS#15 Card305927
+Node: Geldkarte Card306197
+Node: SmartCard-HSM306588
+Node: Undefined Card307183
+Node: Scdaemon Configuration307596
+Node: Scdaemon Examples308634
+Node: Scdaemon Protocol308817
+Node: Scdaemon SERIALNO310336
+Node: Scdaemon LEARN311182
+Node: Scdaemon READCERT312029
+Node: Scdaemon READKEY312431
+Node: Scdaemon PKSIGN312717
+Node: Scdaemon PKDECRYPT313443
+Node: Scdaemon GETATTR314193
+Node: Scdaemon SETATTR314395
+Node: Scdaemon WRITEKEY314600
+Node: Scdaemon GENKEY315302
+Node: Scdaemon RANDOM315505
+Node: Scdaemon PASSWD315728
+Node: Scdaemon CHECKPIN316119
+Node: Scdaemon RESTART317122
+Node: Scdaemon APDU317655
+Node: Specify a User ID318628
+Ref: how-to-specify-a-user-id318786
+Node: Helper Tools323684
+Node: watchgnupg324529
+Ref: option watchgnupg --tcp325351
+Node: gpgv326929
+Node: addgnupghome332044
+Node: gpgconf332740
+Ref: gpgconf-Footnote-1334927
+Node: Invoking gpgconf335225
+Node: Format conventions340410
+Node: Listing components345741
+Node: Checking programs347824
+Node: Listing options350562
+Node: Changing options358058
+Node: Listing global options359760
+Node: Querying versions361531
+Node: Files used by gpgconf364229
+Node: applygnupgdefaults364705
+Node: gpg-preset-passphrase365449
+Node: Invoking gpg-preset-passphrase366484
+Node: gpg-connect-agent367886
+Node: Invoking gpg-connect-agent368600
+Node: Controlling gpg-connect-agent372146
+Node: dirmngr-client378618
+Node: gpgparsemail381969
+Node: symcryptrun382287
+Node: Invoking symcryptrun383186
+Node: gpg-zip385733
+Node: Web Key Service387559
+Node: gpg-wks-client387870
+Node: gpg-wks-server390518
+Node: Howtos394577
+Node: Howto Create a Server Cert394849
+Node: System Notes403247
+Node: W32 Notes404458
+Node: Debugging404880
+Node: Debugging Tools405708
+Node: kbxutil405988
+Ref: kbxutil-Footnote-1407558
+Node: Debugging Hints407655
+Node: Common Problems408786
+Node: Architecture Details414023
+Node: Component interaction414333
+Ref: fig:moduleoverview414519
+Node: GnuPG-1 and GnuPG-2414626
+Ref: fig:cardarchitecture414916
+Node: Copying415031
+Node: Contributors452555
+Node: Glossary458810
+Node: Option Index461329
+Node: Environment Index537387
+Node: Index543023
+
+End Tag Table

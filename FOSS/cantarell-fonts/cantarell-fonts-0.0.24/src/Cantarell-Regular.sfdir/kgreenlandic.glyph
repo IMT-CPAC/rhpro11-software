@@ -1,0 +1,37 @@
+StartChar: kgreenlandic
+Encoding: 312 312 327
+Width: 504
+Flags: HMW
+LayerCount: 2
+Back
+SplineSet
+377 271 m 1
+ 600 482 l 1
+ 736 482 l 1
+ 505 256 l 1
+ 762 0 l 1
+ 611 0 l 1
+ 377 223 l 1
+ 377 0 l 1
+ 257 0 l 1
+ 257 482 l 1
+ 377 482 l 1
+ 377 271 l 1
+EndSplineSet
+Fore
+SplineSet
+75 482 m 1
+ 158 482 l 1
+ 158 0 l 1
+ 75 0 l 1
+ 75 482 l 1
+379 482 m 1
+ 474 482 l 1
+ 264 257 l 1
+ 484 0 l 1
+ 384 0 l 1
+ 166 257 l 1
+ 379 482 l 1
+EndSplineSet
+Validated: 1
+EndChar

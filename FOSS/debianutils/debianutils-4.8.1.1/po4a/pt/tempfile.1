@@ -1,0 +1,82 @@
+.\" -*- nroff -*-
+.\"*******************************************************************
+.\"
+.\" This file was generated with po4a. Translate the source file.
+.\"
+.\"*******************************************************************
+.TH TEMPFILE 1 "27 Jun 2012" Debian 
+.SH NOME
+tempfile \- cria um ficheiro temporário de um modo seguro
+.SH SINOPSE
+\fBtempfile\fP [\-d DIR] [\-p STRING] [\-s STRING] [\-m MODO] [\-n FICHEIRO]
+[\-\-directory=DIR] [\-\-prefix=STRING] [\-\-suffix=STRING] [\-\-mode=MODO]
+[\-\-name=FICHEIRO] [\-\-help] [\-\-version]
+.SH DESCRIÇÃO
+.PP
+\fBtempfile\fP cria um ficheiro temporário num modo seguro. Usa o \fBtempnam\fP(3)
+para escolher o nome e abre\-o com O_RDWR | O_CREAT | O_EXCL. O nome do
+ficheiro é escrito na saída standard. Veja \fBtempnam\fP(3) para os passos
+reais envolvidos em selecção de directório.
+.PP
+O directório onde se vai criar o ficheiro pode ser pesquisa por esta ordem
+(mas consulte o \fBtempnam\fP(3) para respostas autoritárias):
+.TP  3
+a)
+No caso da variável de ambiente \fBTMPDIR\fP existir e conter o nome dum
+directório apropriado, esse é usado.
+.TP 
+b)
+Caso contrário, se o argumento \fI\-\-directório\fP for específico e apropriado,
+ele é usado.
+.TP 
+c)
+Caso contrário, \fIP_tmpdir\fP (como definido em \fI<stdio.h>\fP)  é usado
+quando apropriado.
+.TP 
+d)
+Finalmente pode ser usado um directório de implementação definida \fI(/tmp)\fP.
+.SH OPÇÕES
+.TP 
+\fB\-d, \-\-directory \fP\fIDIR\fP
+Coloca o ficheiro em DIR.
+.TP 
+\fB\-m, \-\-mode \fP\fIMODO\fP
+Abre o ficheiro com MODO em vez de 0600.
+.TP 
+\fB\-n, \-\-name \fP\fIFICHEIRO\fP
+Usa FICHEIRO para o nome em vez de \fBtempnam\fP(3)\fB.\fP As opções \-d, \-p, e \-s
+são ignoradas se for usada esta opção.
+.TP 
+\fB\-p, \-\-prefix \fP\fISTRING\fP
+Usa até cinco letras de STRING para gerar o nome.
+.TP 
+\fB\-s, \-\-suffix \fP\fISTRING\fP
+Gera o ficheiro com STRING sendo o sufixo.
+.TP 
+\fB\-\-help\fP
+Escreve uma mensagem de utilização na saída standard e termina com sucesso.
+.TP 
+\fB\-\-version\fP
+Escreve informação da versão na saída standard e termina com sucesso.
+.SH "VALORES DE RETORNO"
+Um estado ao terminar de 0 significa que o ficheiro temporário foi criado
+com sucesso. Qualquer outro estado ao terminar indica um erro.
+.SH BUGS
+Não é garantida a criação exclusiva quando se criam ficheiros em partições
+NFS, o tempfile não pode fazer directórios temporários. O tempfile está
+abandonado, você deve usar o mktemp(1) em vez deste.
+.SH EXEMPLO
+
+.RS
+.nf
+#!/bin/sh
+#[...]
+t=$(tempfile) || exit
+trap "rm \-f \-\- '$t'" EXIT
+#[...]
+rm \-f \-\- "$t"
+trap \- EXIT
+exit
+.fi
+.SH "VEJA TAMBÉM"
+\fBtempnam\fP(3), \fBmktemp\fP(1)

@@ -1,0 +1,42 @@
+StartChar: X
+Encoding: 88 88 41
+Width: 619
+Flags: HMW
+AnchorPoint: "cedilla" 310 0 basechar 0
+AnchorPoint: "below" 310 0 basechar 0
+AnchorPoint: "above" 310 692 basechar 0
+LayerCount: 2
+Back
+SplineSet
+336 463 m 1
+ 493 692 l 1
+ 632 692 l 1
+ 406 361 l 1
+ 652 0 l 1
+ 511 0 l 1
+ 336 258 l 1
+ 161 0 l 1
+ 20 0 l 1
+ 266 361 l 1
+ 40 692 l 1
+ 179 692 l 1
+ 336 463 l 1
+EndSplineSet
+Fore
+SplineSet
+487 692 m 1
+ 582 692 l 1
+ 363 362 l 1
+ 609 0 l 1
+ 502 0 l 1
+ 307 290 l 1
+ 112 0 l 1
+ 10 0 l 1
+ 260 360 l 1
+ 39 692 l 1
+ 140 692 l 1
+ 316 431 l 1
+ 487 692 l 1
+EndSplineSet
+Validated: 1
+EndChar
